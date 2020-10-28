@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <section id="form-section">
+            <div id="title-div">
+                <h1 id="title">Enter your information</h1>
+                <p id="description">To learn more about you</p>
+            </div>
+            
+            <form action="" id="survey-form">
+
+                <div class="form-div">
+                    <label for="name" id="name-label">Name</label>
+                    <input type="text" id="name" class="input-entry" name="name" placeholder="Enter your name" required> 
+                </div>
+
+                <div class="form-div">
+                    <label for="email" id="email-label">Email</label>
+                    <input type="email" id="email" class="input-entry" name="email" placeholder="Enter your Email" required>
+                </div>
+
+                <div class="form-div">
+                    <label for="number" id="number-label">Age<span id="optional">(optional)</span></label>
+                    <input type="number" id="number" class="input-entry" name="number" placeholder="Age" min="18" max="100">
+                </div>
+
+                <div class="form-div">
+                    <p>Are you ?</p>
+                    <label for="male"><input type="radio" id="male" name="sex" value="male" checked>male</label>
+    
+                    <label for="female"><input type="radio" id="female" name="sex" value="female">female</label>
+                </div>
+
+                <div class="form-div">
+                    <label for="dropdown">Which option best describes your current situation</label>
+                    <select name="dropdown" id="dropdown" class="input-entry">
+                        <option disabled selected value>Select current situation</option>
+                        <option value="student">Student</option>
+                        <option value="job">Employe</option>
+                        <option value="entr">Entreprenor</option>
+                        <option value="no say">Prefer not to say</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+
+                <div class="form-div">
+                    <p>What is your favorite meal ?</p>
+
+                    
+                    <label for="pizza"><input type="checkbox" id="pizza" name="pizza" value="pizza">pizza</label>
+    
+                    
+                    <label for="burger"><input type="checkbox" id="burger" name="burger" value="burger">burger</label>
+    
+                    
+                    <label for="other"><input type="checkbox" id="other" name="other" value="other">other</label>
+                </div>
+
+                <div class="form-div">
+                    <label for="more">More about you</label>
+                    <textarea name="more" id="more" class="input-entry" cols="30" rows="10" placeholder="Here you can write more about you"></textarea>
+                </div>
+                <div id="sub-div">
+                    <input type="submit" value="Submit" id="submit">
+                </div>
+
+            </form>
+
+
+        </section>
+        <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    </body>
+</html>

@@ -1,0 +1,133 @@
+/* GENERAL */
+
+html, body, input, textarea{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 10px;
+    color: #fafafa;
+    font-family: monospace, sans-serif;
+}
+
+body {
+    background: linear-gradient(to bottom right, rgba(255, 187, 0, 0.3),rgba(255, 51, 0, 0.3)),
+    url("images/resto.jpg") no-repeat center fixed;
+    background-size: cover;
+}
+
+div {
+    display: block;
+}
+
+h1 {
+    font-size: 4em;
+}
+
+p {
+    font-size: 2em;
+    margin-bottom: .5rem;
+}
+
+input, select {
+    font-size: 1.6em;
+    display: inline-block;
+    
+}
+
+select {
+    color: #495057;
+}
+
+label {
+    display: flex;
+    align-items: center;
+    margin-bottom: .5rem;
+    font-size: 2em;
+}
+
+/* section */
+
+#form-section {
+    width: 100%;
+    max-width: 600px;
+    margin: 3em auto;
+}
+
+#title-div {
+    text-align: center;
+    margin-bottom: 2em;
+}
+
+#description {
+    font-style: italic;
+    font-size: 2.5em;
+}
+
+/* form */
+
+#survey-form {
+    background-color: rgba(0, 0, 0, 0.6);
+    position: relative;
+    padding: 2em;
+    border-radius: .8rem;
+}
+
+.form-div{
+    padding: 1rem;
+}
+
+.input-entry {
+    width: 100%;
+    padding: 0.8rem;
+    border: 2px #aaa solid;
+    border-radius: .8rem;
+    outline: none;
+    transition: .4s;
+}
+
+.input-entry:focus {
+    border-color: cornflowerblue;
+    box-shadow: 0 0 8px 0 cornflowerblue;
+}
+
+#optional {
+    font-size: 0.7em;
+    margin-left: 4px;
+    color: rgb(212, 212, 212);
+}
+
+input[type="radio"], input[type="checkbox"] {
+    margin-right: 5px;
+    min-width: 1.6rem;
+    min-height: 1.6rem;
+}
+
+#more {
+    border: 0px;
+    border-radius: 0px;
+    font-size: 1.6em;
+}
+
+#sub-div {
+    text-align: center;
+}
+
+#submit {
+    width: 90%;
+    padding: 1rem;
+    background-color: cornflowerblue;
+    color: #fafafa;
+    margin: 2rem 0;
+    border: 0;
+    border-radius: .3rem;
+    cursor: pointer;
+    transition: .4s;
+    font-size: 1.7em;
+}
+
+#submit:hover {
+    box-shadow: 0 0 8px 0 cornflowerblue;
+}
